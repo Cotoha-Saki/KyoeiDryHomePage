@@ -44,7 +44,7 @@
 }
 
 body {
-
+    background-color: #ffd4d4;
 }
 
 /* お知らせバナー */
@@ -94,10 +94,10 @@ body {
 }
 
 /* ヘッダー画像 */
-.header-img {
-    position: relative;
+/* .header-img {
+    position: absolute;
     z-index: 1;
-}
+} */
 
 /* ナビゲーションバー */
 .nav {
@@ -109,7 +109,8 @@ body {
     margin-top: 41.5px;
     padding-top: 18px;
     padding-right: 20px;
-    background-color: blueviolet;
+    padding-bottom:20px;
+    background-color: rgb(255, 255, 255);
 }
 
 .nav ul {
@@ -121,17 +122,22 @@ body {
 .nav ul li {
     list-style: none;
     line-height: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+.nav ul li+ li {
+    border-left: 0px;
+    border-right: 3px solid #ffffff;
 }
 
 .nav ul li .nav-text {
     margin-right: 20px;
-    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    color: rgb(255, 0, 0);
     font-family: 'KB';
     font-size: 30px;
     transition: 0.3s;
-    
 }
 
 .nav ul li .nav-text:hover {
@@ -144,4 +150,18 @@ body {
     height: 87.8px;
     position: fixed;
     margin-top: 41.5px;
+    margin-left: 13px;
+}
+
+/* お知らせ */
+.news {
+    position: relative;
+    background-color: aqua;
+    top: 300px;
+}
+
+.news .news-text {
+    font-size: 50px;
+    font-family: 'KE';
+    text-align: center;
 }
