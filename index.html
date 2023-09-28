@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/img/faviconV2.png" type="image/x-icon">
     <!-- ResetCSS -->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -46,9 +47,13 @@
         </div>
     </header>
 
-    <div class="irazuryu">
-        <img src="/img/irazuryu.jpg" alt="">
-    </div>
+    <!-- スライドショー -->
+    <ul class="slider">
+        <li><img class="irazuryu-img" src="/img/irazuryu.jpg" alt=""></li>
+        <li><img class="senzyo-img" src="/img/senzyo.jpg" alt=""></li>
+        <li><img class="irazuryu-img" src="/img/irazuryu.jpg" alt=""></li>
+        <li><img class="irazuryu-img" src="/img/irazuryu.jpg" alt=""></li>
+    </ul>
 
     <div class="news">
         <p class="news-text">お知らせ</p>
@@ -57,10 +62,9 @@
         </div>
     </div>
 
-    <!-- スライドショー -->
-    <div class="slider">
-
-    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/JS/slider.js"></script>
 </body>
 
 </html>
