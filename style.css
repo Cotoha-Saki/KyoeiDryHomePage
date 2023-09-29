@@ -179,19 +179,18 @@ body {
  .slider img {
     width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
     height:auto;
+    margin-left: 30px;
+    margin-right: 30px;
  }
  
  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
  
  .slider .slick-slide {
-     transform: scale(0.8);/*左右の画像のサイズを80%に*/
 	transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
-	opacity: 0.6;/*透過50%*/
  }
 
  .slider .slick-slide.slick-center {
 	transform: scale(1);/*中央の画像のサイズだけ等倍に*/
-	opacity: 1;/*透過なし*/
 }
  
  /*矢印の設定*/
@@ -211,12 +210,12 @@ body {
  
  .slick-prev {/*戻る矢印の位置と形状*/
     z-index: 1000;
-     left: 1.5%;
+     left: 15%;
      transform: rotate(-135deg);
  }
  
  .slick-next {/*次へ矢印の位置と形状*/
-     right: 1.5%;
+     right: 15%;
      transform: rotate(45deg);
  }
  
