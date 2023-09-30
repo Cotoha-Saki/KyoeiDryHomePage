@@ -1,7 +1,7 @@
 $('.slider').slick({
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-    autoplaySpeed: 600,
+    autoplaySpeed: 3000,
     slidesToShow: 3,//スライドを画面に3枚見せる
     slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
     prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
@@ -9,4 +9,7 @@ $('.slider').slick({
     centerMode: true,//要素を中央ぞろえにする
     variableWidth: true,//幅の違う画像の高さを揃えて表示
     dots: true,//下部ドットナビゲーションの表示
+    adaptiveHeight: true,
+    // prevArrow: '<img src="img/yazirusi migi.png" class="slide-arrow prev-arrow">',
+    // nextArrow: '<img src="/img/yazirusi hidari.png" class="slide-arrow next-arrow">',
 });
