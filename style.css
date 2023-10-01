@@ -56,7 +56,7 @@ body {
     background-color: rgb(255, 63, 63);
     overflow: hidden;
     font-size: 17px;
-    font-family:'KS';
+    font-family:'KR';
 }
 
 .NoticeBanner .NoticeBanner-Content {
@@ -129,12 +129,13 @@ body {
 }
 
 .nav ul li .nav-text {
-    margin-right: 20px;
-    margin-left: 20px;
-    color: rgb(255, 0, 0);
+    margin-right: 35px;
+    margin-left: 35px;
+    color: black;
     font-family: 'KS';
-    font-size: 23px;
+    font-size: 20px;
     transition: 0.3s;
+    border-bottom: #707070 solid 2px;
 }
 
 .nav ul li .nav-text:hover {
@@ -201,21 +202,18 @@ body {
 }
  
  /*矢印の設定*/
- .slick-arrow:before{
-	content:""!important;
-}
  
  /*戻る、次へ矢印の位置*/
  .slick-prev, 
  .slick-next {
-     position: absolute;/*絶対配置にする*/
-     top: 58%;
-     cursor: pointer;/*マウスカーソルを指マークに*/
-     outline: none;/*クリックをしたら出てくる枠線を消す*/
-     border-top: 2px solid #666;/*矢印の色*/
-     border-right: 2px solid #666;/*矢印の色*/
-     height: 15px;
-     width: 15px;
+     /* position: absolute;　　絶対配置にする */
+     /* top: 58%; */
+     /* cursor: pointer;　　マウスカーソルを指マークに */
+     /* outline: none;　　クリックをしたら出てくる枠線を消す */
+     /* border-top: 2px solid #666;　　矢印の色 */
+     /* border-right: 2px solid #666;　　矢印の色 */
+     /* height: 15px;
+     width: 15px; */
  }
  
  .slick-prev {/*戻る矢印の位置と形状*/
@@ -254,3 +252,26 @@ body {
  .slick-dots .slick-active button{
      background:#333;/*ドットボタンの現在地表示の色*/
  }
+
+ /* 矢印 */
+ .slider .slick-arrow {
+	transition: all  0.3s;
+	position: absolute;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+.slider .slick-arrow:hover{
+	cursor: pointer;
+	opacity: 0.9;
+}
+.slider .prev-arrow {
+    position: absolute;
+    top: 57%;
+    width: 5%;
+    left: 11.4%;
+}
+.slider .next-arrow {
+    width: 5%;
+    top: 410px;
+    right: 11.4%;
+}
