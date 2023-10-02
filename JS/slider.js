@@ -10,6 +10,4 @@ $('.slider').slick({
     variableWidth: true,//幅の違う画像の高さを揃えて表示
     dots: true,//下部ドットナビゲーションの表示
     adaptiveHeight: true,
-    prevArrow: '<img src="/img/yazirusi migi.png" class="slide-arrow prev-arrow">',
-	nextArrow: '<img src="/img/yazirusi hidari.png" class="slide-arrow next-arrow">',
 });
