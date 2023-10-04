@@ -9,7 +9,8 @@
     <!-- ResetCSS -->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/hamburger.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <section>
         <a class="NoticeBanner" href="https://www.youtube.com/watch?v=yG_xbqL9Fss" target="_blank">
             <div class="NoticeBanner-Content">
-                <span class="NoticeBanner-Content-Text">※ここにお知らせなどを入れてください。※</span>
+                <span class="NoticeBanner-Content-Text">※ここにお知らせなどを入れてください※</span>
             </div>
         </a>
     </section>
@@ -29,23 +30,32 @@
         </div>
     </section>
 
-    <!-- 一旦消しとく -->
-    <!-- <div class="header-img">
-        <img src="/img/Header.jpg" alt="Error">
-    </div> -->
-
     <!-- ヘッダー -->
     <header>
         <div class="nav">
-            <ul>
-                <li><a class="nav-text" href="index.html">ホーム</a></li>
+            <ul class="gnavi">
+                <li class="current"><a class="nav-text" href="index.html">ホーム</a></li>
                 <li><a class="nav-text" href="#">サービス内容</a></li>
-                <li><a class="nav-text" href="#">料金</a></li>
+                <li><a class="nav-text" href="#">料金案内</a></li>
                 <li><a class="nav-text" href="#">店舗紹介</a></li>
                 <li><a class="nav-text" href="#">会社案内</a></li>
             </ul>
+            <ul class="menu-ultag">
+                <li>
+                    <div class="openbtn">
+                        <span></span><span></span><span></span>
+                    </div>
+                </li>
+            </ul>
         </div>
     </header>
+
+    <!-- ハンバーガーメニュー  -->
+    <div class="test">
+        <input type="checkbox" id="check" class="hamburger">
+        <label for="check"><span></span></label>
+    </div>
+    
 
     <!-- スライドショー -->
     <ul class="slider">
@@ -59,13 +69,18 @@
     <div class="news">
         <p class="news-text">お知らせ</p>
         <div class="news-content">
-
+            <ul class="news-list">
+                <li>2023.10.3</li>
+                <li>これはテストです</li>
+            </ul>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/JS/slider.js"></script>
+    <script src="/JS/menu.js"></script>
 </body>
 
 </html>
